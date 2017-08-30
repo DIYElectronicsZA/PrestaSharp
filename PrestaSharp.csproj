@@ -31,8 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RestSharp.105.2.3\lib\net45\RestSharp.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>packages\RestSharp.105.2.3\lib\net45\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -87,6 +86,7 @@
     <Compile Include="Entities\FilterEntities\order_detail.cs" />
     <Compile Include="Entities\FilterEntities\order_history.cs" />
     <Compile Include="Entities\FilterEntities\order_payment.cs" />
+    <Compile Include="Entities\FilterEntities\product_attribute.cs" />
     <Compile Include="Entities\FilterEntities\product_supplier.cs" />
     <Compile Include="Entities\FilterEntities\specific_price_rule.cs" />
     <Compile Include="Entities\FilterEntities\tax.cs" />
@@ -99,6 +99,7 @@
     <Compile Include="Entities\order_detail.cs" />
     <Compile Include="Entities\order_history.cs" />
     <Compile Include="Entities\order_payment.cs" />
+    <Compile Include="Entities\product_attribute.cs" />
     <Compile Include="Entities\product_supplier.cs" />
     <Compile Include="Entities\specific_price_rule.cs" />
     <Compile Include="Entities\state.cs" />
@@ -178,6 +179,7 @@
     <Compile Include="Factories\OrderDetailFactory.cs" />
     <Compile Include="Factories\OrderHistoryFactory.cs" />
     <Compile Include="Factories\OrderPaymentFactory.cs" />
+    <Compile Include="Factories\ProductAttributeFactory.cs" />
     <Compile Include="Factories\ProductSupplierFactory.cs" />
     <Compile Include="Factories\SpecificPriceRuleFactory.cs" />
     <Compile Include="Factories\StateFactory.cs" />
@@ -221,9 +223,7 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="packages.config" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
