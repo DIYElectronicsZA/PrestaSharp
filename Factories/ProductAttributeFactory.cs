@@ -16,7 +16,7 @@ namespace Bukimedia.PrestaSharp.Factories
 
         public Entities.product_attribute Get(long ProductAttributeId)
         {
-            RestRequest request = this.RequestForGet("product_attributes", ProductAttributeId, "product_Attribute");
+            RestRequest request = this.RequestForGet("product_attributes", ProductAttributeId, "product_attribute");
             return this.Execute<Entities.product_attribute>(request);
         }
 
@@ -51,7 +51,7 @@ namespace Bukimedia.PrestaSharp.Factories
 
         public List<long> GetIds()
         {
-            RestRequest request = this.RequestForGet("product_attributes", null, "product_attributes");
+            RestRequest request = this.RequestForGet("product_attributes", null, "prestashop");
             return this.ExecuteForGetIds<List<long>>(request, "product_attribute");
         }
 
